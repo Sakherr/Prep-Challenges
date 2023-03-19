@@ -61,14 +61,15 @@ function square(arr) {
 //
 // Output: ['Adam Anderson', 'Ben Zeller', 'Peter Mccord', 'Fred Sagar', 'Nathan Weiss']
 
-function getFullNames(students) {
-    var fullNames = students.map(function(student) {
-      return student.firstName + " " + student.lastName;
-    });
-    
-    return fullNames;
-  }
+function fullName(students) {
+  var fullNames = students.map(function(student) {
+    return student.firstName + " " + student.lastName;
+  });
   
+  return fullNames;
+}
+
+
   
 // -------------------------------------------------------------------------------------------------------
 

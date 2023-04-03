@@ -67,8 +67,14 @@ const detectFace = (arr) => {
 // Input <= "coding" output =>"cdn"
 
 const eveCharacter = (str) => {
-    //write your code here ...
-}
+  let result = '';
+  for (let i = 0; i < str.length; i =i+ 2) {
+    result = result+str[i];
+  }
+  return result;
+};
+
+
 // -------------------------------------------------------------------------------------------------------
 
 

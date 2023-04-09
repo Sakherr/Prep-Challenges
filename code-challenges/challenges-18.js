@@ -75,8 +75,29 @@ const wordLetters = (str1, str2) => {
 //
 
 const targetIndex = (arr, int) => {
-    // write your code here
-}
+  let start = 0;
+  
+  
+  let end = arr.length - 1;
+ 
+ 
+  let mid = Math.floor((start + end) / 2);
+
+  
+  while (arr[mid] !== int && start <= end) {
+   
+    if (int < arr[mid]) {
+    
+       end = mid - 1;
+    } else {
+          start = mid + 1;
+    }
+            mid = Math.floor((start + end) / 2);
+  }
+return (arr[mid] === int) ? mid : end + 1;
+};
+
+
 // -------------------------------------------------------------------------------------------------------
 
 module.exports = { wordLength, wordLetters, targetIndex };
